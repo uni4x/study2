@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lispの基本文法</title>
+    <script src="https://cdn.jsdelivr.net/npm/@marp-team/marp-core/lib/browser.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .slide { margin-bottom: 40px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; }
+        h1, h2 { color: #333; }
+        code { background: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <section class="slide">
+        <h1>Lispの基本文法</h1>
+        <p>Lispはリスト構造を基本とする関数型プログラミング言語です。</p>
+    </section>
+
+    <section class="slide">
+        <h2>基本構文</h2>
+        <ul>
+            <li>すべての式は括弧で囲む: <code>(+ 1 2)</code></li>
+            <li>演算子が最初に来る前置記法</li>
+            <li>リストはプログラムの基本単位</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>変数定義</h2>
+        <pre><code>(setq x 10)  ; xに10を代入</code></pre>
+    </section>
+
+    <section class="slide">
+        <h2>関数定義</h2>
+        <pre><code>(defun square (x)
+  (* x x))  ; xの二乗を計算</code></pre>
+    </section>
+
+    <section class="slide">
+        <h2>条件分岐</h2>
+        <pre><code>(if (> x 0)
+    (print "Positive")
+    (print "Non-positive"))</code></pre>
+    </section>
+
+    <section class="slide">
+        <h2>ループ</h2>
+        <pre><code>(dotimes (i 5)
+  (print i))  ; 0から4を出力</code></pre>
+    </section>
+</body>
+</html>

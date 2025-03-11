@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vimの基本操作</title>
+    <script src="https://cdn.jsdelivr.net/npm/@marp-team/marp-core/lib/browser.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .slide { margin-bottom: 40px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; }
+        h1, h2 { color: #333; }
+        code { background: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <section class="slide">
+        <h1>Vimの基本操作</h1>
+        <p>Vimは強力なテキストエディタで、効率的な操作が可能です。</p>
+    </section>
+
+    <section class="slide">
+        <h2>基本モード</h2>
+        <ul>
+            <li><code>ノーマルモード</code> - コマンド実行</li>
+            <li><code>インサートモード</code> - テキスト入力 (<code>i</code> で切替)</li>
+            <li><code>ビジュアルモード</code> - 範囲選択 (<code>v</code> で切替)</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>基本コマンド</h2>
+        <ul>
+            <li><code>:q</code> - Vimを終了</li>
+            <li><code>:w</code> - ファイルを保存</li>
+            <li><code>:wq</code> - 保存して終了</li>
+            <li><code>:q!</code> - 保存せずに終了</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>カーソル移動</h2>
+        <ul>
+            <li><code>h</code> - 左移動</li>
+            <li><code>l</code> - 右移動</li>
+            <li><code>j</code> - 下移動</li>
+            <li><code>k</code> - 上移動</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>テキスト編集</h2>
+        <ul>
+            <li><code>dd</code> - 行削除</li>
+            <li><code>yy</code> - 行コピー</li>
+            <li><code>p</code> - 貼り付け</li>
+            <li><code>u</code> - アンドゥ</li>
+        </ul>
+    </section>
+</body>
+</html>
