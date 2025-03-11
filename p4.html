@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lispのdefunの書き方</title>
+    <script src="https://cdn.jsdelivr.net/npm/@marp-team/marp-core/lib/browser.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .slide { margin-bottom: 40px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; }
+        h1, h2 { color: #333; }
+        code { background: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <section class="slide">
+        <h1>Lispの<code>defun</code>の書き方</h1>
+        <p><code>defun</code> はLispで関数を定義するための構文です。</p>
+    </section>
+
+    <section class="slide">
+        <h2>基本構文</h2>
+        <pre><code>(defun 関数名 (引数1 引数2 ...)
+  関数の本体)</code></pre>
+        <p>例:</p>
+        <pre><code>(defun add (x y)
+  (+ x y))</code></pre>
+        <p>この関数は <code>(add 2 3)</code> のように呼び出すと <code>5</code> を返します。</p>
+    </section>
+
+    <section class="slide">
+        <h2>デフォルト引数なしの関数</h2>
+        <pre><code>(defun greet ()
+  (print "Hello, Lisp!"))</code></pre>
+        <p>この関数は引数を取らずに呼び出すと「Hello, Lisp!」と表示します。</p>
+    </section>
+
+    <section class="slide">
+        <h2>条件分岐を含む関数</h2>
+        <pre><code>(defun check-positive (n)
+  (if (> n 0)
+      "Positive"
+      "Non-positive"))</code></pre>
+        <p>この関数は、引数 <code>n</code> が正の数かどうかを判定します。</p>
+    </section>
+
+    <section class="slide">
+        <h2>再帰関数</h2>
+        <pre><code>(defun factorial (n)
+  (if (<= n 1)
+      1
+      (* n (factorial (- n 1)))))</code></pre>
+        <p>この関数は <code>n</code> の階乗を計算します。</p>
+    </section>
+</body>
+</html>
